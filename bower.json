@@ -12,7 +12,11 @@
   "homepage": "https://github.com/muayKenny/personalCrud",
   "dependencies": {
     "bootstrap": "latest",
-    "angular": "latest"
+    "font-awesome": "latest",
+    "animate.css": "latest",
+    "angular": "latest",
+    "angular-ui-router": "^1.0.3",
+    "angular-bootstrap": "^2.5.0"
   },
   "resolutions": {
     "angular": "1.6.3"
