@@ -1,0 +1,14 @@
+{
+    "chunks": {
+        "vendor": [
+            "jquery",
+            "bootstrap",
+            "angular"
+        ]
+    },
+    "paths": {
+        "jquery": "content/libs/jquery/dist/jquery.min.js",
+        "bootstrap": "content/libs/bootstrap/dist/js/bootstrap.min.js",
+        "angular": "content/libs/angular/angular.min.js"
+    }
+}

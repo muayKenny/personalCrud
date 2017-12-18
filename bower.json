@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "description": "my deal",
+  "main": "server.js",
+  "authors": [
+    "Kenny Sheftel"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "portfolio"
+  ],
+  "homepage": "https://github.com/muayKenny/personalCrud",
+  "dependencies": {
+    "bootstrap": "latest",
+    "angular": "latest"
+  },
+  "resolutions": {
+    "angular": "1.6.3"
+  }
+}
