@@ -5,7 +5,8 @@
         'ui.router',
         'client.layout',
         'client.site',
-        'client.media'
+        'client.media',
+        'client.services'
     ])
 
     angular.module('client')
