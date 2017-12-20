@@ -3,7 +3,8 @@
 <script src="/theme/assets/js/jquery.scrolly.min.js"></script>
 <script src="/theme/assets/js/skel.min.js"></script>
 <script src="/theme/assets/js/util.js"></script>
-<script src="/theme/assets/js/main.js"></script><!-- Wrapper -->
+<script src="/theme/assets/js/main.js"></script>
+<!-- Wrapper -->
 <div id="wrapper" class="divided">
 
 	<!-- One -->
@@ -23,7 +24,8 @@
 	</section>
 
 	<!-- Two -->
-	<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" >
+	<div xid="first"></div>
+	<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 		<div class="content">
 			<h2>he's a dev</h2>
 			<p>That's short for developer</p>
@@ -33,17 +35,15 @@
 				</li>
 			</ul>
 		</div>
-		<div class="image" id="first">
-			<img src="https://www.wikihow.com/images/thumb/f/fc/Be-a-Good-Scientist-Step-2-Version-2.jpg/aid1383765-v4-900px-Be-a-Good-Scientist-Step-2-Version-2.jpg" alt="" />
+		<div class="image">
+			<img src="https://www.wikihow.com/images/thumb/f/fc/Be-a-Good-Scientist-Step-2-Version-2.jpg/aid1383765-v4-900px-Be-a-Good-Scientist-Step-2-Version-2.jpg"
+			 alt="" />
 		</div>
 	</section>
 
-
-	<!-- Three -->
-	<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="second">
+	<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" >
 		<div class="content">
-			<h2>he knows html</h2>
-			<p>thats really advanced!</p>
+			<h2>he <strong>knows</strong> html</h2>
 			<ul class="actions vertical">
 				<li>
 					<a href="#third" class="button smooth-scroll-middle">Learn More</a>
@@ -54,7 +54,18 @@
 			<img src="https://i.ytimg.com/vi/YYl-aV4wSss/hqdefault.jpg" alt="" />
 		</div>
 	</section>
+	<!-- Three -->
 
+	<section class="wrapper style1 align-center" id="second">
+		<div class="inner">
+			<h1>and now get this..</h1>
+		</div>
+		<ul class="actions vertical">
+			<li>
+				<a href="#third" class="button smooth-scroll-middle">Learn More</a>
+			</li>
+		</ul>
+	</section>
 	<!-- Four -->
 	<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="third">
 		<div class="content">
@@ -70,6 +81,7 @@
 			<img src="https://i.ytimg.com/vi/YYl-aV4wSss/hqdefault.jpg" alt="" />
 		</div>
 	</section>
+
 
 	<!-- Five -->
 	<section class="wrapper style1 align-center" id="fourth">
