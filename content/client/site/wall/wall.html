@@ -1,0 +1,48 @@
+<div class="row">
+    <div style="padding-top:30px; padding-right:100px;" class="col-md-4">
+        <h1 style="padding-right:100px;" >just the crud things: Guest Book</h1>
+    </div>
+    <section class="wrapper style1 align-center">
+        <div class="inner">
+            <div class="index align-left">
+                <section ng-repeat="message in wallCtrl.messageArray">
+                    <header>
+                        <h3 style="display: inline;"><i><b>From Friend: </b></i></h3> 
+                        <h3 style="display: inline; padding-left: 20px;">{{message.name}}</h3>
+                    </header>
+                    <div class="content">
+                        <h1></h1>
+                        <blockquote>{{message.content}}</blockquote>
+                    </div>
+                    <!-- <hr> -->
+                </section>
+                <!-- Text -->
+                <section>
+                    <header>
+                        <h2>say hi</h2>
+                    </header>
+                    <div class="content">
+                        <form>
+                            <div class="field first">
+                                <label for="name">Name</label>
+                                <input ng-model="wallCtrl.formData.name" type="text" name="name" id="name" value="" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea ng-model="wallCtrl.formData.content" name="message" id="message" rows="6"></textarea>
+                            </div>
+
+                            <ul class="actions col-md-3 offset-md-3">
+                                <li>
+                                    <input ng-click="wallCtrl.submit()" type="submit" name="submit" id="submit" value="Send Message" />
+                                </li>
+                            </ul>
+                        </form>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</div>
+<pre>{{wallCtrl.formData|json}}</pre>

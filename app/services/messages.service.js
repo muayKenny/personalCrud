@@ -10,7 +10,8 @@ module.exports ={
 function _readAll() {
     return conn.db().collection('messages').find().toArray()
         .then(messages => {
-            for (message in messages){
+            for (let i = 0; i < messages.length; i++) {
+                let message = messages[i]
                 message._id = message._id.toString()
             }
             return messages

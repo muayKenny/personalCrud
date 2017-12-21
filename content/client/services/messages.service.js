@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    Angular.module('client.services').factory('messageService', MessageServiceFactory)
+    angular.module('client.services').factory('messageService', MessageServiceFactory)
 
     MessageServiceFactory.$inject = ['$http', '$q']
 
