@@ -1,9 +1,11 @@
 const router = require('express').Router()
 const mainRoutes = require('./main.routes')
+const messageRoutes = require('./messages.routes')
 const content = require('./content.routes')
 
 module.exports = router
 router.use('/api/main', mainRoutes)
+router.use('/api/messages', messageRoutes)
 router.use(content)
 
 

@@ -15,5 +15,14 @@
                     }
                 }
             })
+            .state('site.wall', {
+                url: '/wall',
+                views: {
+                    "content": {
+                        templateUrl: "client/site/wall/wall.html",
+                        controller: "wallController as wallCtrl"
+                    }
+                }
+            })
     }
 })();
