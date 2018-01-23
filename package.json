@@ -23,7 +23,11 @@
     "express": "^4.16.2",
     "mongodb": "^2.2.31",
     "dotenv": "^2.0.0",
+<<<<<<< HEAD
     "bower": "latest"
+=======
+    "bower": "1.8.2"
+>>>>>>> 3dc0694200090982ee7b177454d5150f0930cad4
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.24.0",
