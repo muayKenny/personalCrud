@@ -18,15 +18,15 @@ app.use(bodyParser.urlencoded({
 
 app.use(router)
 
-app.listen(port, ()=> {
-    console.log('live from ' + port + ' @joburg')
-})
+// app.listen(port, ()=> {
+//     console.log('live from ' + port + ' @joburg')
+// })
 
-// mongo.connect(process.env.MONGODB_URL) 
-//     // if I decide to do indexing later .then(()=> configMongoDB(app))
-//     .then(()=> app.listen(port))
-//     .then(()=> console.log(`all about that port: ${port}`))
-//     .catch((err)=> {
-//         console.error(err)
-//         process.exit(1)
-//     })
+mongo.connect(process.env.MONGODB_URL) 
+    // if I decide to do indexing later .then(()=> configMongoDB(app))
+    .then(()=> app.listen(port))
+    .then(()=> console.log(`all about that port: ${port}`))
+    .catch((err)=> {
+        console.error(err)
+        process.exit(1)
+    })
